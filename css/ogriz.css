@@ -1,0 +1,166 @@
+:root {
+	--ogriz-blue:  #49bce6;
+	--ogriz-brown: #c4ad75;
+	--ogriz-grey:  #4a4a4a;
+	--ogriz-title-font: Arial, sans-serif;
+	--ogriz-body-font:	Arial, sans-serif;
+}
+
+body {
+	padding: 0;
+	margin:0;
+}
+
+.title {
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.titlePic {
+	background-blend-mode: darken;
+	height: 100%;
+}
+
+.titleText {
+	position: absolute;
+	font-weight: bolder;
+	font-size: 100px;
+	font-family: var(--ogriz-title-font);
+	color: var(--ogriz-brown);
+	text-shadow: 5px 5px 10px var(--ogriz-grey);
+}
+
+.accueil .titleText {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--ogriz-brown);
+}
+
+.contact .titleText {
+	top: 50%;
+	left: 20%;
+	transform: translate(-10%, -50%);
+	color: white;
+}
+
+.subTitle {
+	font-weight: bold;
+	font-size: 50px;
+	color: white;
+}
+
+.logoText {
+	height: 30px;
+	margin-top: -10%;
+}
+
+/* NAVBAR */
+
+.navbar {
+	position: sticky;
+	top: 0;
+	background-color: white;
+	box-shadow: 0 20px 20px 0 rgba(0,0,0,.2);
+	z-index: 1;
+}
+
+.links a {
+	color: var(--ogriz-blue);
+	font-family: var(--ogriz-title-font);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 20px;
+}
+
+.links {
+	margin-top: 20px;
+	float: right;
+}
+
+.logoNavbar {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: 100px;
+}
+
+
+/* CONTACT */
+
+h1 {
+	color: var(--ogriz-brown);
+	font-family: var(--ogriz-title-font);
+}
+
+.contact {
+	margin-top: 5%;
+}
+
+.anchor {
+	position:relative; 
+	top: -70px;
+}
+
+.contact table {
+	width: 70%;
+	margin-top: 5%;
+}
+
+.accueil table {
+	margin-top: 3%;
+	width: 70%;
+}
+
+.accueil p, .accueil h2 {
+	text-align: justify;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+
+.footer table {
+	width: 50%;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.pic {
+	width: 350px;
+	border-radius: 5%;
+	box-shadow: 0 5px 5px 0;
+}
+
+.photo {
+	height: 300px;
+}
+
+.contact td {
+	text-align: center;
+	color: var(--ogriz-grey);
+	font-family: var(--ogriz-body-font);
+	line-height: 5px;
+}
+
+.accueil td {
+	color: var(--ogriz-grey);
+	font-family: var(--ogriz-body-font);
+	text-align: left;
+	line-height: 20px;
+}
+
+.footer {
+	background-color: var(--ogriz-grey);
+	overflow: auto;
+	color: white;
+	margin-top: 5%;
+}
+
+.footer thead {
+	color: var(--ogriz-brown);
+	font-weight: bolder;
+	font-size: 200%;
+}
